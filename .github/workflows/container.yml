@@ -17,8 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.YOUR_PAT_TOKEN }}
       - run: npm install
       - run: npm run build
 
