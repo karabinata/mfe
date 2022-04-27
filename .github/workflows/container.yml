@@ -28,6 +28,6 @@ jobs:
         with:
           directories: '*'
           endpoint: https://s3.filebase.com
-          bucket: mfe/marketing
+          bucket: mfe
           access-key: ${{ secrets.FILEBASE_ACCESS_KEY }}
           secret-key: ${{ secrets.FILEBASE_SECRET_KEY }}
