@@ -3,15 +3,15 @@ import React, { useRef, useEffect } from 'react';
 import { mount } from 'marketing/MarketingIndex';
 
 const Marketing = () => {
-    const marketingContainer = useRef();
+    const ref = useRef();
 
     useEffect(() => {
-        if (marketingContainer.current) {
-            mount(marketingContainer.current);
+        if (ref.current) {
+            mount(ref.current);
         }
     }, []);
 
-    return <div ref={marketingContainer}></div>
+    return <div ref={ref}></div>
 }
 
 export default Marketing;
