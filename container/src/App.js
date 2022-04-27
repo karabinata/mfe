@@ -1,10 +1,14 @@
 import React from 'react';
 
 import Marketing from './components/Marketing';
+import Test from './components/Test';
 
 const App = () => {
     return (
-        <Marketing />
+        <>
+            <Test />
+            <Marketing />
+        </>
     )
 }
 

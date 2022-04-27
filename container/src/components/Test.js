@@ -1,0 +1,1 @@
+export default () => <h1>I am test only</h1>;
