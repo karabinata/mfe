@@ -1,18 +1,11 @@
 import React, { useRef } from 'react';
 
-import { mount } from 'marketing/MarketingIndex';
-import { useEffect } from 'react';
+import Marketing from './components/Marketing';
 
 const App = () => {
-    const marketingContainer = useRef();
-
-    useEffect(() => {
-        if (marketingContainer.current) {
-            mount(marketingContainer.current);
-        }
-    }, []);
-
-    return <div ref={marketingContainer}></div>
+    return (
+        <Marketing />
+    )
 }
 
 export default App;
